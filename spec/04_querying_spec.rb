@@ -14,6 +14,7 @@ describe 'querying' do
   end
 
   it 'returns the name and motto of the character with the longest motto' do
+    # binding.pry
     expect(@db.execute(select_name_and_motto_of_char_with_longest_motto)).to eq([["Tyrion Lanister", "A Lanister always pays is debts"]])
   end
 
